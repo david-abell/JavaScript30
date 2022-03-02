@@ -71,7 +71,7 @@
 
       keys.forEach((el) =>
         el.addEventListener("transitionend", (ev) => {
-          ev.target.classList.toggle("playing");
+          ev.target.classList.remove("playing");
         })
       );
       window.addEventListener("keydown", playSound);
